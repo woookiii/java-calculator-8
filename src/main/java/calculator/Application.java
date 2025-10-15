@@ -2,8 +2,6 @@ package calculator;
 
 import camp.nextstep.edu.missionutils.Console;
 
-import java.beans.Customizer;
-
 public class Application {
     public static void main(String[] args) {
         String input = guideInput();
@@ -12,11 +10,18 @@ public class Application {
             String customDelimiter = extractCustomDelimiter(input);
 //            System.out.println(customDelimiter);
 
+            input = refineInput(input);
+//            System.out.println(input);
+
         }
 
 
 
 
+    }
+
+    private static String refineInput(String input) {
+        return input.substring(5);
     }
 
     private static String extractCustomDelimiter(String input) {
