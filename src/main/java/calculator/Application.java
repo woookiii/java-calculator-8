@@ -2,17 +2,25 @@ package calculator;
 
 import camp.nextstep.edu.missionutils.Console;
 
+import java.beans.Customizer;
+
 public class Application {
     public static void main(String[] args) {
         String input = guideInput();
 
         if(hasCustomRegex(input)) {
+            String customDelimiter = extractCustomDelimiter(input);
+//            System.out.println(customDelimiter);
 
         }
 
 
 
 
+    }
+
+    private static String extractCustomDelimiter(String input) {
+        return String.valueOf(input.charAt(2));
     }
 
     private static boolean hasCustomRegex(String input) {
