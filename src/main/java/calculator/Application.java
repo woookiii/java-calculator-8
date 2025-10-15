@@ -17,7 +17,6 @@ public class Application {
 
 
 
-
     }
 
     private static String refineInput(String input) {
