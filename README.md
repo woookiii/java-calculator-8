@@ -30,5 +30,5 @@
 
 ### 주어진 숫자를 결과 폼으로 만들어 주는 기능
     - param: long
-    - param: String
+    - return: void
 

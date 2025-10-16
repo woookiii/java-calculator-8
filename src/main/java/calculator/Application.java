@@ -22,6 +22,11 @@ public class Application {
 
         long totalSum = calculateTotalSum(input, delimiterList);
 
+        showResult(totalSum);
+    }
+
+    private static void showResult(long totalSum) {
+        System.out.format("결과 : %d%n", totalSum);
     }
 
     private static long calculateTotalSum(String input, List<String> delimiterList) {
