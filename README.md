@@ -26,9 +26,9 @@
 
 ### 합연산할 문자열에서 구분자를 제외하고 숫자만 파싱해 합연산을 수행하는 기능
     - params: String input, List<String> delimiterList
-    - return: String[]
+    - return: long
 
 ### 주어진 숫자를 결과 폼으로 만들어 주는 기능
-    - param: Long
+    - param: long
     - param: String
 
