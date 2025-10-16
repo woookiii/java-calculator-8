@@ -13,11 +13,9 @@ public class Application {
 
         if(hasCustomDelimiter(input)) {
             String customDelimiter = extractCustomDelimiter(input);
-//            System.out.println(customDelimiter);
             delimiterList.add(customDelimiter);
 
             input = refineInput(input);
-//            System.out.println(input);
         }
 
         long totalSum = calculateTotalSum(input, delimiterList);
