@@ -23,16 +23,10 @@
 #### 구분자 리스트를 만드는 기능
 
 ### 합연산할 문자열에 0부터 9까지의 숫자와 정해진 구분자 이외의 문자가 있는지 검증하는 기능
-    - params: String input(합연산할 문자열), String delimiterRegex(구분자들을 담고있는 정규표현식)
-    - return: void
 
-### 합연산할 문자열을 구분자로 쪼개서 문자열 배열을 리턴하는 기능
-    - params: String input(합연산할 문자열), String delimiterRegex(구분자들을 담고있는 정규표현식)
+### 합연산할 문자열에서 구분자를 제외하고 숫자만 파싱해 합연산을 수행하는 기능
+    - params: String input, List<String> delimiterList
     - return: String[]
-
-### 문자열 배열에서 숫자를 파싱해서 합연산을 수행하는 기능
-    - param: String
-    - return: Long
 
 ### 주어진 숫자를 결과 폼으로 만들어 주는 기능
     - param: Long
