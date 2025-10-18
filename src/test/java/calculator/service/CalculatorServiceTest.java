@@ -16,6 +16,6 @@ class CalculatorServiceTest {
 
         long result = CalculatorService.calculateTotalSum(input, delimiters);
 
-        assertThat(result).isEqualTo(10);
+        assertThat(result).isEqualTo(10L);
     }
 }
