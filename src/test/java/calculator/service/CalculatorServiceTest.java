@@ -12,10 +12,10 @@ class CalculatorServiceTest {
     @Test
     void calculateTotalSum() {
         List<String> delimiters = Arrays.asList(",", ":", "-");
-        String input = "1,2:3-4";
+        String input = "1000,200:30-4";
 
         long result = CalculatorService.calculateTotalSum(input, delimiters);
 
-        assertThat(result).isEqualTo(10L);
+        assertThat(result).isEqualTo(1234L);
     }
 }
