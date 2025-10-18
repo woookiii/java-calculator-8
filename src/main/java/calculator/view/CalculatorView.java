@@ -2,9 +2,9 @@ package calculator.view;
 
 import camp.nextstep.edu.missionutils.Console;
 
-public class StringSumView {
+public class CalculatorView {
 
-    private StringSumView() {
+    private CalculatorView() {
     }
 
     public static String guideInput() {

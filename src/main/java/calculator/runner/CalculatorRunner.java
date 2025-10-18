@@ -2,7 +2,7 @@ package calculator.runner;
 
 import calculator.service.CalculatorService;
 import calculator.service.DelimiterSeparationService;
-import calculator.view.StringSumView;
+import calculator.view.CalculatorView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -15,7 +15,7 @@ public class CalculatorRunner {
 
     public static void run() {
 
-        String input = StringSumView.guideInput();
+        String input = CalculatorView.guideInput();
 
         List<String> delimiterList = new ArrayList<>(Arrays.asList(":",","));
 
@@ -29,6 +29,6 @@ public class CalculatorRunner {
 
         long totalSum = CalculatorService.calculateTotalSum(input, delimiterList);
 
-        StringSumView.showResult(totalSum);
+        CalculatorView.showResult(totalSum);
     }
 }

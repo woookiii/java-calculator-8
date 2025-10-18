@@ -8,14 +8,14 @@ import java.io.PrintStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class StringSumViewTest {
+class CalculatorViewTest {
 
     @Test
     void guideInput() {
         String expectedInput = "1,2-4\\\\nnn";
         System.setIn(new ByteArrayInputStream((expectedInput + "\n").getBytes()));
 
-        String input = StringSumView.guideInput();
+        String input = CalculatorView.guideInput();
 
         assertThat(input).isEqualTo(expectedInput);
     }
@@ -26,7 +26,7 @@ class StringSumViewTest {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
 
-        StringSumView.showResult(totalSum);
+        CalculatorView.showResult(totalSum);
 
         assertThat(out.toString()).contains("결과 : 10000000000");
     }
