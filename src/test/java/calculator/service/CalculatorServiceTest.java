@@ -13,7 +13,9 @@ class CalculatorServiceTest {
     void calculateTotalSum() {
         List<String> delimiters = Arrays.asList(",", ":", "-");
         String input = "1,2:3-4";
+
         long result = CalculatorService.calculateTotalSum(input, delimiters);
+
         assertThat(result).isEqualTo(10);
     }
 }
